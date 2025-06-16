@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; color: #333; }
+        h1 { color: #28a745; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 5px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+        nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Inicio</a>
+        <a href="{% url 'services' %}">Servicios</a>
+        <a href="{% url 'dynamic_placeholder' %}">Contenido Dinámico</a>
+    </nav>
+    <h1>{{ titulo }}</h1>
+    <p>{{ descripcion_adicional }}</p>
+    <ul>
+        {% for servicio in servicios_list %}
+            <li>{{ servicio }}</li>
+        {% endfor %}
+    </ul>
+     <p>Contacta con nosotros para más información, registro o para agendar una cita.</p>
+</body>
+</html>

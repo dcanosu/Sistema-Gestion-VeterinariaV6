@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a {{ nombre_clinica }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; color: #333; }
+        h1 { color: #007bff; }
+        nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+        nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Inicio</a>
+        <a href="{% url 'services' %}">Servicios</a>
+        <a href="{% url 'dynamic_placeholder' %}">Información</a>
+    </nav>
+    <h1>¡Bienvenido a {{ nombre_clinica }}!</h1>
+    <p>Tu mejor opción para el cuidado de tus mascotas.</p>
+    <p>Explora nuestros servicios.</p>
+</body>
+</html>
