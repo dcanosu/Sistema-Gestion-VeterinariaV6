@@ -1,5 +1,6 @@
 # Clínica Veterinaria - Django App
- 
+ # Sistema-Gestion-VeterinariaV6
+
 ## Descripción
  
 Aplicación web desarrollada con Django siguiendo el patrón Modelo-Vista-Plantilla (MVT). Incluye:
@@ -24,7 +25,6 @@ Aplicación web desarrollada con Django siguiendo el patrón Modelo-Vista-Planti
 - `urls.py`: definición clara de rutas
 - `static/`: CSS básico
 
-# Sistema-Gestion-VeterinariaV5
 ## Integrantes
 - Daniel Cano Suarez
 - Miguel Cerquera Arias
